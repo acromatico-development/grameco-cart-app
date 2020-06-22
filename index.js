@@ -8,12 +8,12 @@ window.addEventListener('load', async () => {
     function checkTrue(e) {
         const disponible = e.target.selectedOptions[0].dataset.disponible;
 
-        console.log(disponible);
-
         if(disponible) {
             botonPagar.disabled = false;
+            console.log('Disponible');
         } else {
             botonPagar.disabled = true;
+            console.log('No Disponible');
         }
     }
     
