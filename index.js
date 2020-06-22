@@ -6,7 +6,7 @@ window.addEventListener('load', async () => {
     const data = await fetch(`https://cdn.jsdelivr.net/gh/acromatico-development/grameco-cart-app/data/${archivo}-regiones.json`).then(resp => resp.json());
 
     function checkTrue(e) {
-        const disponible = e.target.selectedOptions[0].dataset.disponible;
+        const disponible = e.target.selectedOptions[0].dataset.disponible === "true" ? true : false;
 
         if(disponible) {
             botonPagar.disabled = false;
