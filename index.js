@@ -14,7 +14,13 @@ window.addEventListener('load', async () => {
     }
 
     function checkTrue(e) {
-        console.log(e.target.dataset.disponible);
+        const disponible = e.target.selectedOptions[0].dataset.disponible;
+
+        if(disponible) {
+            botonPagar.disabled = false;
+        } else {
+            botonPagar.disabled = true;
+        }
     }
     
     selectRegion.innerHTML = `<option value="" selected disabled>-- Selecciona una Opción --</option>`;
