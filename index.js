@@ -12,6 +12,10 @@ window.addEventListener('load', async () => {
             botonPagar.disabled = false;
         }
     }
+
+    function checkTrue(e) {
+        console.log(e.target.dataset.disponible);
+    }
     
     selectRegion.innerHTML = `<option value="" selected disabled>-- Selecciona una Opción --</option>`;
     selectComuna.innerHTML = `<option value="" selected disabled>-- Selecciona una Opción --</option>`;
@@ -32,5 +36,5 @@ window.addEventListener('load', async () => {
         checkEmpty();
     });
 
-    selectComuna.addEventListener('change', checkEmpty);
+    selectComuna.addEventListener('change', checkTrue);
 });
