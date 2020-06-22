@@ -5,16 +5,10 @@ window.addEventListener('load', async () => {
     const botonPagar = document.getElementById('cart_pagar');
     const data = await fetch(`https://cdn.jsdelivr.net/gh/acromatico-development/grameco-cart-app/data/${archivo}-regiones.json`).then(resp => resp.json());
 
-    function checkEmpty() {
-        if(selectComuna.value === '' || selectRegion.value === '') {
-            botonPagar.disabled = true;
-        } else {
-            botonPagar.disabled = false;
-        }
-    }
-
     function checkTrue(e) {
         const disponible = e.target.selectedOptions[0].dataset.disponible;
+
+        console.log(disponible);
 
         if(disponible) {
             botonPagar.disabled = false;
@@ -39,7 +33,6 @@ window.addEventListener('load', async () => {
         const newHtml = comunas.reduce((prev, curr) => prev + `<option value="${curr.nombre}" data-disponible="${curr.disponible}">${curr.nombre}</option>`, '<option value="" selected disabled>-- Selecciona una Opción --</option>');
 
         selectComuna.innerHTML = newHtml;
-        checkEmpty();
     });
 
     selectComuna.addEventListener('change', checkTrue);
