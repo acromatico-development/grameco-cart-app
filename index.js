@@ -1,12 +1,12 @@
 window.addEventListener('load', async () => {
-    const url = document.getElementById('comunas_restrict').dataset.file;
+    const archivo = document.getElementById('comunas_restrict').dataset.file;
     const selectRegion = document.getElementById('cart_region');
     const selectComuna = document.getElementById('cart_comuna');
     const botonPagar = document.getElementById('cart_pagar');
-    const data = await fetch(`https:${url}`).then(resp => resp.json());
+    const data = await fetch(`https://cdn.jsdelivr.net/gh/acromatico-development/grameco-cart-app/data/${archivo}-regiones.json`).then(resp => resp.json());
 
     function checkEmpty() {
-        if(rucInput.value === '' || selectComuna.value === '' || selectRegion.value === '') {
+        if(selectComuna.value === '' || selectRegion.value === '') {
             botonPagar.disabled = true;
         } else {
             botonPagar.disabled = false;
@@ -26,12 +26,11 @@ window.addEventListener('load', async () => {
         const valor = e.target.value;
         const comunas = data[valor];
         
-        const newHtml = comunas.reduce((prev, curr) => prev + `<option>${curr}</option>`, '<option value="" selected disabled>-- Selecciona una Opción --</option>');
+        const newHtml = comunas.reduce((prev, curr) => prev + `<option value="${curr.nombre}" data-disponible="${curr.disponible}">${curr.nombre}</option>`, '<option value="" selected disabled>-- Selecciona una Opción --</option>');
 
         selectComuna.innerHTML = newHtml;
         checkEmpty();
     });
 
     selectComuna.addEventListener('change', checkEmpty);
-    rucInput.addEventListener('keyup', checkEmpty);
 });
