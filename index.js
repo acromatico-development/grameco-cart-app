@@ -28,7 +28,7 @@ window.addEventListener('load', async () => {
     modalContainer.innerHTML = `
 <div class="cart-modal-box">
     <p>${modalText}</p>
-    <button class="button" onclick="closeModal();">Cerrar</button>
+    <button class="button btn" onclick="closeModal();">Cerrar</button>
 </div>
     `;
 
