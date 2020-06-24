@@ -11,7 +11,7 @@
     { "nombre": "Cieneguilla", "disponible": false },
     { "nombre": "Comas", "disponible": false },
     { "nombre": "El Agustino", "disponible": false },
-    { "nombre": "Independencia", "disponible": true },
+    { "nombre": "Independencia", "disponible": false },
     { "nombre": "Jesús María", "disponible": false },
     { "nombre": "La Molina", "disponible": true },
     { "nombre": "La Victoria", "disponible": true },
