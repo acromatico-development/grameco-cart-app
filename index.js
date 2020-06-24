@@ -24,7 +24,9 @@ window.addEventListener('load', async () => {
     }
     
     selectRegion.innerHTML = `<option value="" selected disabled>-- Selecciona una Opción --</option>`;
+    selectRegion.style.maxWidth = '500px';
     selectComuna.innerHTML = `<option value="" selected disabled>-- Selecciona una Opción --</option>`;
+    selectComuna.style.maxWidth = '500px';
     modalContainer.innerHTML = `
 <div class="cart-modal-box">
     <p>${modalText}</p>
