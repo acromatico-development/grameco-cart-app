@@ -16,7 +16,7 @@
     { "nombre": "La Molina", "disponible": true },
     { "nombre": "La Victoria", "disponible": true },
     { "nombre": "Lince", "disponible": true },
-    { "nombre": "Los Olivos", "disponible": false },
+    { "nombre": "Los Olivos", "disponible": true },
     { "nombre": "Lurigancho", "disponible": false },
     { "nombre": "Lurín", "disponible": false },
     { "nombre": "Magdalena del Mar", "disponible": true },

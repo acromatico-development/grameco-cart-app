@@ -59,7 +59,7 @@ window.addEventListener('load', async () => {
             }
         });
 
-        const newHTML = optionsArray.reduce((prev, curr) => prev + `<option value="${curr}">${curr}</option>`, '<option value="" selected disabled>-- Selecciona una Opción --</option>');
+        const newHTML = optionsArray.reduce((prev, curr,ind) => prev + `${ind === 0 ? `<option selected value="${curr}">${curr}</option>` : `<option value="${curr}">${curr}</option>`}`, '');
 
         selectBloque.innerHTML = newHTML;
     }
