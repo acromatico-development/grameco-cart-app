@@ -7,6 +7,7 @@ window.addEventListener('load', async () => {
     const archivo = document.getElementById('comunas_restrict').dataset.file;
     const selectRegion = document.getElementById('cart_region');
     const selectComuna = document.getElementById('cart_comuna');
+    const selectBloque = document.querySelector("#cart_bloque");
     const botonPagar = document.getElementById('cart_pagar');
     const modalContainer = document.getElementById('cart_errormodal');
     const modalText = modalContainer.dataset.texto;
@@ -40,6 +41,27 @@ window.addEventListener('load', async () => {
         const newOption = document.createElement('option');
         newOption.innerText = key;
         selectRegion.appendChild(newOption);
+    }
+
+    if(selectBloque){
+        let optionsArray = [];
+        const tipoBloque = selectBloque.dataset.tipo;
+        const ahora = new Date("01/01/2019 " + selectBloque.dataset.hora).getTime();
+        const bloquesData = await fetch(`https://cdn.jsdelivr.net/gh/acromatico-development/grameco-cart-app@latest/data/bloques-horarios/bloques.json`).then(resp => resp.json());
+        selectBloque.innerHTML = `<option value="" selected disabled>-- Selecciona una Opción --</option>`;
+        selectBloque.style.maxWidth = '500px';
+        selectBloque.style.marginLeft = 'auto';
+
+        bloquesData[tipoBloque].forEach(bloque => {
+            const blockTime = new Date("01/01/2019 " + bloque.value).getTime();
+            if(ahora < blockTime - 1800000) {
+                optionsArray.push(bloque.name);
+            }
+        });
+
+        const newHTML = optionsArray.reduce((prev, curr) => prev + `<option value="${curr}">${curr}</option>`, '<option value="" selected disabled>-- Selecciona una Opción --</option>');
+
+        selectBloque.innerHTML = newHTML;
     }
 
     selectRegion.addEventListener('change', (e) => {
