@@ -1,4 +1,22 @@
 {
+  "tusuper": [
+    {
+      "name": "8am-12pm",
+      "value": "12:00:00"
+    },
+    {
+      "name": "12am-4pm",
+      "value": "12:00:00"
+    },
+    {
+      "name": "2pm-6pm",
+      "value": "12:00:00"
+    },
+    {
+      "name": "Express (2 horas)",
+      "value": "23:59:00"
+    }
+  ],
   "restaurante": [
     {
       "name": "11am-12pm",
