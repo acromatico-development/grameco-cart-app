@@ -47,7 +47,7 @@ window.addEventListener('load', async () => {
         let optionsArray = [];
         const tipoBloque = selectBloque.dataset.tipo;
         const ahora = new Date("01/01/2019 " + selectBloque.dataset.hora).getTime();
-        const bloquesData = await fetch(`https://cdn.jsdelivr.net/gh/acromatico-development/grameco-cart-app@latest/data/bloques-horarios/bloques.json`).then(resp => resp.json());
+        const bloquesData = await fetch(`https://cdn.jsdelivr.net/gh/acromatico-development/grameco-cart-app/data/bloques-horarios/bloques.json`).then(resp => resp.json());
         selectBloque.innerHTML = `<option value="" selected disabled>-- Selecciona una Opción --</option>`;
         selectBloque.style.maxWidth = '500px';
         selectBloque.style.marginLeft = 'auto';
