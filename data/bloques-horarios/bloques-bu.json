@@ -11,6 +11,14 @@
     {
       "name": "2pm-6pm",
       "value": "16:00:00"
+    },
+    {
+      "name": "Express (2 horas)",
+      "value": "16:00:00"
+    },
+    {
+      "name": "8am-12pm (Día Siguiente)",
+      "value": "23:59:59"
     }
   ],
   "restaurante": [
