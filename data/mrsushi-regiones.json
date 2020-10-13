@@ -2,7 +2,7 @@
   "Lima": [
     { "nombre": "Ancón", "disponible": false },
     { "nombre": "Ate", "disponible": true },
-    { "nombre": "Barranco", "disponible": true },
+    { "nombre": "Barranco", "disponible": false },
     { "nombre": "Breña", "disponible": true },
     { "nombre": "Carabayllo", "disponible": false },
     { "nombre": "Cercado de Lima", "disponible": false },

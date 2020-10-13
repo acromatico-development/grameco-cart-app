@@ -54,7 +54,7 @@ window.addEventListener('load', async () => {
 
         bloquesData[tipoBloque].forEach(bloque => {
             const blockTime = new Date("01/01/2019 " + bloque.value).getTime();
-            if(ahora < blockTime - 1800000) {
+            if(ahora < blockTime - 900000) {
                 optionsArray.push(bloque.name);
             }
         });
