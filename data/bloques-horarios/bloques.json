@@ -1,21 +1,20 @@
 {
   "tusuper": [
     {
-      "name": "8am-12pm",
-      "value": "10:15:00"
+      "name": "7am-12pm",
+      "value": "10:00:00"
     },
     {
-      "name": "12am-4pm",
-      "value": "14:15:00"
+      "name": "12am-5pm",
+      "value": "15:00:00"
     },
-    {
-      "name": "2pm-6pm",
-      "value": "16:15:00"
-    }
-    ,
     {
       "name": "5pm-9pm",
-      "value": "19:15:00"
+      "value": "20:00:00"
+    },
+    {
+      "name": "Envío Express (Rango de 2 horas)",
+      "value": "20:00:00"
     }
   ],
   "restaurante": [
