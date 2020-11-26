@@ -21,31 +21,31 @@
   "restaurante": [
     {
       "name": "11am-12pm",
-      "value": "12:00:00"
+      "value": "11:20:00"
     },
     {
       "name": "12pm-1pm",
-      "value": "13:00:00"
+      "value": "12:20:00"
     },
     {
       "name": "1pm-2pm",
-      "value": "14:00:00"
+      "value": "13:20:00"
     },
     {
       "name": "2pm-3pm",
-      "value": "15:00:00"
+      "value": "14:20:00"
     },
     {
       "name": "3pm-4pm",
-      "value": "16:00:00"
+      "value": "15:20:00"
     },
     {
       "name": "4pm-5pm",
-      "value": "17:00:00"
+      "value": "16:20:00"
     },
     {
       "name": "5pm-6pm",
-      "value": "18:00:00"
+      "value": "17:20:00"
     }
   ],
   "dulcesEnvios": []
