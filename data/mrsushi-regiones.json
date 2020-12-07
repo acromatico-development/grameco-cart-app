@@ -1,7 +1,7 @@
 {
   "Lima": [
     { "nombre": "Ancón", "disponible": false },
-    { "nombre": "Ate", "disponible": true },
+    { "nombre": "Ate", "disponible": false },
     { "nombre": "Barranco", "disponible": false },
     { "nombre": "Breña", "disponible": true },
     { "nombre": "Carabayllo", "disponible": false },
@@ -14,7 +14,7 @@
     { "nombre": "Independencia", "disponible": false },
     { "nombre": "Jesús María", "disponible": true },
     { "nombre": "La Molina", "disponible": true },
-    { "nombre": "La Victoria", "disponible": true },
+    { "nombre": "La Victoria", "disponible": false },
     { "nombre": "Lince", "disponible": true },
     { "nombre": "Los Olivos", "disponible": true },
     { "nombre": "Lurigancho", "disponible": false },

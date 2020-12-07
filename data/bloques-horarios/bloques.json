@@ -53,6 +53,14 @@
     {
       "name": "7pm-8pm",
       "value": "19:20:00"
+    },
+    {
+      "name": "8pm-9pm",
+      "value": "20:20:00"
+    },
+    {
+      "name": "9pm-10pm",
+      "value": "21:20:00"
     }
   ],
   "dulcesEnvios": []

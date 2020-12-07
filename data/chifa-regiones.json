@@ -14,7 +14,7 @@
     { "nombre": "Independencia", "disponible": false },
     { "nombre": "Jesús María", "disponible": false },
     { "nombre": "La Molina", "disponible": true },
-    { "nombre": "La Victoria", "disponible": true },
+    { "nombre": "La Victoria", "disponible": false },
     { "nombre": "Lince", "disponible": true },
     { "nombre": "Los Olivos", "disponible": false },
     { "nombre": "Lurigancho", "disponible": false },
