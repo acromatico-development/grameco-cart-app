@@ -53,5 +53,8 @@
     { "nombre": "La Punta", "disponible": false },
     { "nombre": "Mi Perú", "disponible": false },
     { "nombre": "Ventanilla", "disponible": false }
+  ],
+  "Playa": [
+    { "nombre": "Sur Chico", "disponible": true }
   ]
 }
