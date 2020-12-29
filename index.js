@@ -11,7 +11,7 @@ window.addEventListener('load', async () => {
     const botonPagar = document.getElementById('cart_pagar');
     const modalContainer = document.getElementById('cart_errormodal');
     const modalText = modalContainer.dataset.texto;
-    const data = await fetch(`https://cdn.jsdelivr.net/gh/acromatico-development/grameco-cart-app@latest/data/${archivo}-regiones.json`).then(resp => resp.json());
+    const data = await fetch(`https://cdn.jsdelivr.net/gh/acromatico-development/grameco-cart-app/data/${archivo}-regiones.json`).then(resp => resp.json());
 
     function checkTrue(e) {
         const disponible = e.target.selectedOptions[0].dataset.disponible === "true" ? true : false;
