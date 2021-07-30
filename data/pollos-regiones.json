@@ -1,11 +1,13 @@
 {
   "Lima": [
     { "nombre": "Barranco", "disponible": true },
-    { "nombre": "La Molina", "disponible": true },
-    { "nombre": "Miraflores", "disponible": true },
-    { "nombre": "San Borja", "disponible": true },
+    { "nombre": "Jesús María", "disponible": true },
+    { "nombre": "Lince", "disponible": true },
     { "nombre": "San Isidro", "disponible": true },
     { "nombre": "Surco", "disponible": true },
-    { "nombre": "Surquillo", "disponible": true }
+    { "nombre": "Magdalena del Mar", "disponible": true },
+    { "nombre": "San Borja", "disponible": true },
+    { "nombre": "Surquillo", "disponible": true },
+    { "nombre": "Miraflores", "disponible": true }
   ]
 }
