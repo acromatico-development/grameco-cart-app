@@ -55,6 +55,8 @@ window.addEventListener('load', async () => {
         selectBloque.style.maxWidth = '500px';
         selectBloque.style.marginLeft = 'auto';
 
+        console.log(bloquesData);
+
         bloquesData[tipoBloque].forEach(bloque => {
             const blockTime = new Date("01/01/2019 " + bloque.value).getTime();
             if(ahora < blockTime - 900000) {
