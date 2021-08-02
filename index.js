@@ -64,6 +64,8 @@ window.addEventListener('load', async () => {
             }
         });
 
+        console.log("Opciones", optionsArray);
+
         const newHTML = optionsArray.reduce((prev, curr,ind) => prev + `${ind === 0 ? `<option selected value="${curr}">${curr}</option>` : `<option value="${curr}">${curr}</option>`}`, '');
 
         selectBloque.innerHTML = newHTML;
