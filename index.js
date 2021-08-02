@@ -7,11 +7,13 @@ window.addEventListener('load', async () => {
     const archivo = document.getElementById('comunas_restrict').dataset.file;
     const selectRegion = document.getElementById('cart_region');
     const selectComuna = document.getElementById('cart_comuna');
-    const selectBloque = document.querySelector("#cart_bloque");
+    const selectBloque = document.getElementById("cart_bloque");
     const botonPagar = document.getElementById('cart_pagar');
     const modalContainer = document.getElementById('cart_errormodal');
     const modalText = modalContainer.dataset.texto;
     const data = await fetch(`https://cdn.jsdelivr.net/gh/acromatico-development/grameco-cart-app/data/${archivo}-regiones.json`).then(resp => resp.json());
+
+    console.log("horarios", selectBloque);
 
     function checkTrue(e) {
         const disponible = e.target.selectedOptions[0].dataset.disponible === "true" ? true : false;
