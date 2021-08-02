@@ -56,6 +56,7 @@ window.addEventListener('load', async () => {
         selectBloque.style.marginLeft = 'auto';
 
         console.log(bloquesData);
+        console.log(tipoBloque);
 
         bloquesData[tipoBloque].forEach(bloque => {
             const blockTime = new Date("01/01/2019 " + bloque.value).getTime();
