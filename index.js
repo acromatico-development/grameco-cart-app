@@ -44,6 +44,7 @@ window.addEventListener('load', async () => {
     }
 
     if(selectBloque){
+        console.log("horarios", selectBloque);
         let optionsArray = [];
         const tipoBloque = selectBloque.dataset.tipo;
         const ahora = new Date("01/01/2019 " + selectBloque.dataset.hora).getTime();
